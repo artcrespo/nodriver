@@ -4,6 +4,7 @@ from nodriver.core.connection import Connection
 from nodriver.core.tab import Tab
 from nodriver.core.element import Element
 from nodriver.core.browser import Browser
+from nodriver.core.inputs import Keyboard, Touchscreen, Mouse
 from nodriver.core import util
 from nodriver.core.util import start
 from nodriver.core._contradict import ContraDict  # noqa
@@ -20,4 +21,7 @@ __all__ = [
     "util",
     "Element",
     "ContraDict",
+    "Keyboard",
+    "Touchscreen",
+    "Mouse",
 ]
