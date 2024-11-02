@@ -7,8 +7,6 @@ import typing
 import warnings
 from typing import List, Union, Optional, Tuple
 from typing import Any, Dict, Optional, TYPE_CHECKING
-
-from nodriver.core.tab import Tab
 if TYPE_CHECKING:
     from typing import Set
 
