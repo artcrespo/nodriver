@@ -8,6 +8,7 @@ import warnings
 from typing import List, Union, Optional, Tuple
 
 import nodriver.core.browser
+from nodriver.core.inputs import Keyboard, Mouse, Touchscreen
 from . import element
 from . import util
 from .config import PathLike
@@ -130,6 +131,9 @@ class Tab(Connection):
         self.browser = browser
         self._dom = None
         self._window_id = None
+        self.keyboard = Keyboard(self)
+        self.touchscreen = Touchscreen(self)
+        self.mouse = Mouse(self)
 
     @property
     def inspector_url(self):
