@@ -7,14 +7,13 @@ import types
 import typing
 from typing import Dict, Optional, List, Set, Union, Callable
 
-import typing
-
 from .element import Element
 
 if typing.TYPE_CHECKING:
     from .browser import Browser, PathLike
-from .config import Config
+
 from .. import cdp
+from .config import Config
 
 __registered__instances__: Set[Browser] = set()
 
